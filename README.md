@@ -1,5 +1,7 @@
 # Qotes-Nippon-Colors
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Qotes/Qotes-Nippon-Colors.svg)](https://greenkeeper.io/)
+
 A set of colors exported from [NIPPON COLORS - 日本の伝統色](http://nipponcolors.com).
 
 ## LICENSE
