@@ -1,6 +1,4 @@
-# Qotes-Nippon-Colors
-
-[![Greenkeeper badge](https://badges.greenkeeper.io/Qotes/Qotes-Nippon-Colors.svg)](https://greenkeeper.io/)
+# Qotes-Nippon-Colors [![CircleCI](https://img.shields.io/circleci/project/github/Qotes/Qotes-Nippon-Colors/master.svg)](https://circleci.com/gh/Qotes/Qotes-Nippon-Colors) [![Greenkeeper badge](https://badges.greenkeeper.io/Qotes/Qotes-Nippon-Colors.svg)](https://greenkeeper.io/)
 
 A set of colors exported from [NIPPON COLORS - 日本の伝統色](http://nipponcolors.com).
 
