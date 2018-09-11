@@ -1,21 +1,26 @@
 import * as React from 'react'
+import Color from './color'
 import Colors from './colors'
-import { colors } from '../colors'
+import Context from '../context'
 
 
 export default function Main () {
   return (
-    <main>
-      <div className="container">
-        <div className="row justify-content-md-center">
-          <div className="col order-12 col-md-auto">
-            The third second section
+    <Context.Consumer>
+      {({ selectedColor }) => (
+        <main style={{backgroundColor: selectedColor.hex}}>
+          <div className="container">
+            <div className="row justify-content-md-center">
+              <div className="col order-1">
+                <Colors />
+              </div>
+              <div className="col order-12 col-sm-auto">
+                <Color color={selectedColor} />
+              </div>
+            </div>
           </div>
-          <div className="col order-1">
-            <Colors colors={colors} />
-          </div>
-        </div>
-      </div>
-    </main>
+        </main>
+      )}
+    </Context.Consumer>
   )
 }

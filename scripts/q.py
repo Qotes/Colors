@@ -35,25 +35,26 @@ reg = re.compile(r'<div><a href="javascript:void\(0\);">((.+), (.+))?</a></div>'
 reis = reg.finditer(res.text)
 
 
-with open('src/colors.json', 'a', encoding='utf-8') as outfile:
-    outfile.write('{"colors": [')
+ost = '{"colors": ['
 
-    rei = next(reis)
-    while True:
-        kanji, roma = rei[2], rei[3]
-        payload['color'] = roma
-        res = q.post('http://nipponcolors.com/php/io.php', headers=headers, data=payload)
-        print(kanji, roma, res.text)
-        str = '{"name":"' + roma + '","kanji":"' + kanji + '","color":' + res.text + '}'
-        try:
-            rei = next(reis)
-            str += ','
-            outfile.write(str)
-        except StopIteration:
-            outfile.write(str)
-            break
+rei = next(reis)
+while True:
+    kanji, roma = rei[2], rei[3]
+    payload['color'] = roma
+    res = q.post('http://nipponcolors.com/php/io.php', headers=headers, data=payload)
+    print(kanji, roma, res.text)
+    ost += '{"name":"' + roma + '","kanji":"' + kanji + '","color":' + res.text + '}'
+    try:
+        rei = next(reis)
+        ost += ','
+    except StopIteration:
+        break
 
-    outfile.write(']}')
+ost += ']}'
+
+
+with open('src/colors.json', 'wt', encoding='utf-8') as outfile:
+    outfile.write(ost)
 
 
 call(['node', 'scripts/p.js'])
