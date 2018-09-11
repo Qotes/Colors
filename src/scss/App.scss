@@ -1,15 +1,18 @@
-.App {
-  text-align: center;
-}
+$KURENAI: #cb1b45;
+$NADESHIKO: #dc9fb4;
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
+.spin {
+  animation: spin infinite 20s linear;
   height: 80px;
 }
 
-@keyframes App-logo-spin {
+@keyframes spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+a {
+  text-decoration: none;
 }
 
 body {
@@ -18,9 +21,28 @@ body {
   padding: 0;
 }
 
+main {
+  ul.colors {
+    list-style: none;
+  }
+  div.color {
+    position: fixed;
+    top: 10px;
+    font-size: 2rem;
+  }
+}
+
 footer {
   position: fixed;
   right: 10px;
   bottom: 10px;
   font-size: 0.8rem;
+
+  a {
+    color: $KURENAI;
+    text-shadow: 0 0 2px $NADESHIKO;
+  }
+  a:hover {
+    color: $NADESHIKO;
+  }
 }

@@ -14,7 +14,7 @@ interface IColorProps {
 const Color = ({ color, index }: IColorProps) => (
   <Context.Consumer>
     {({ selectColor }) => (
-      <li style={{color: color.hex}} onClick={(e: React.MouseEvent) => selectColor(index, e)}>
+      <li className="color" style={{color: color.hex}} onClick={(e: React.MouseEvent) => selectColor(index, e)}>
         {color.kanji} {color.name} {color.hex} {color.cmyk} {rgb2yiq(color.rgb)}
       </li>
     )}
@@ -23,7 +23,7 @@ const Color = ({ color, index }: IColorProps) => (
 
 
 const Colors = () => (
-  <ul>
+  <ul className="colors">
     {colors.map((color, i) => (<Color color={color} index={i} key={i} />))}
   </ul>
 )

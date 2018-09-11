@@ -1,4 +1,5 @@
 import * as React from 'react'
+import Color from './color'
 import Colors from './colors'
 import Context from '../context'
 
@@ -14,7 +15,7 @@ export default function Main () {
                 <Colors />
               </div>
               <div className="col order-12 col-sm-auto">
-                The third second section
+                <Color color={selectedColor} />
               </div>
             </div>
           </div>
