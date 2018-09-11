@@ -11,3 +11,6 @@ export interface IColorData {
 
 
 export const colors: IColorData[] = data.colors
+
+
+export default colors
