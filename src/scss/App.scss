@@ -12,10 +12,15 @@
   to { transform: rotate(360deg); }
 }
 
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 footer {
-  position: absolute;
+  position: fixed;
   right: 10px;
   bottom: 10px;
-  // text-shadow: 0 1px 1px black;
   font-size: 0.8rem;
 }
