@@ -41,7 +41,7 @@
     "@types/node" "*"
     "@types/react" "*"
 
-"@types/react@*", "@types/react@^16.3.16":
+"@types/react@*", "@types/react@16.4.13":
   version "16.4.13"
   resolved "https://registry.npmjs.org/@types/react/-/react-16.4.13.tgz#1385f5dc3486aa493849a32ccce626a817543e28"
   dependencies:

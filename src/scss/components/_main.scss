@@ -1,0 +1,11 @@
+main {
+  transition: background-color 2s ease-out;
+  ul.colors {
+    list-style: none;
+  }
+  div.color {
+    position: fixed;
+    top: 10px;
+    font-size: 2rem;
+  }
+}
