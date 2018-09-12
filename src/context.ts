@@ -3,7 +3,7 @@ import { colors, IColorData } from './colors'
 import { rgb2yiq } from './components/helpers/transformer'
 
 
-export const defaultColorIndex = 16
+export const defaultColorIndex = 15
 
 
 export interface IContext {
