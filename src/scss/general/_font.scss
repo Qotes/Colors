@@ -4,14 +4,46 @@
 
 @font-face {
   font-family: 'Kai';
-  src: url('../simkai.woff') format('woff');
+  src: url('../fonts/simkai.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 .font-kai {
-  font-family: 'KaiTi', 'STKaiti', 'Kai', Arial, Helvetica, sans-serif;
+  font-family: 'KaiTi', 'STKaiti', 'Kai', serif;
   // font-family: 'KaiTi', 'STKaiti', 'AR PL UKai TW MBE', 'Kai', Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+  font-family: 'Bebas-neue';
+  src: url('../fonts/bebasneue.woff2') format('woff2'),
+       url('../fonts/bebasneue.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-bebas-neue {
+  font-family: 'Bebas-neue', Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+  font-family: 'Eb-Garamond';
+  src: url('../fonts/ebgaramond.woff2') format('woff2'),
+       url('../fonts/ebgaramond.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-eb-garamond {
+  font-family: 'Eb-Garamond', serif;
+}
+
+.font-sans {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.font-mono {
+  font-family: monospace, sans-serif;
 }
 
 .rem-half {

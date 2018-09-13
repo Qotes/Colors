@@ -25,7 +25,7 @@ interface IRgbProps {
 // tslint:disable: jsx-alignment no-magic-numbers
 const Circle = ({ progress, color }: ICircleProps) => (
   <ReactCircle progress={progress} progressColor={color} textColor={color}
-    showPercentageSymbol={false} size={50} lineWidth={15} bgColor="rgba(200, 200, 200, 0.5)"
+    showPercentageSymbol={false} size={50} lineWidth={15} bgColor="rgba(220, 220, 220, 0.6)"
     textStyle={{ fontSize: '12rem' }} animationDuration="2s"
   />
 )
@@ -33,7 +33,7 @@ const Circle = ({ progress, color }: ICircleProps) => (
 
 const Cmyk = ({ label, progress, color }: ICmykProps) => (
   <div className="color-box">
-    <div className="color-label">{label}</div>
+    <div className="color-label font-sans">{label}</div>
     <div className="color-circle"><Circle progress={progress} color={color} /></div>
   </div>
 )
@@ -41,7 +41,7 @@ const Cmyk = ({ label, progress, color }: ICmykProps) => (
 
 const Rgb = ({ label, value }: IRgbProps) => (
   <div className="color-box">
-    <div className="color-label">{label}</div>
+    <div className="color-label font-sans">{label}</div>
   </div>
 )
 
@@ -74,7 +74,7 @@ const ColorName = ({ color }: IColorProps) => (
       <div className="col color-name">
         <span className="color-name-kanji rem-4 font-kai">{color.kanji}</span>
         <br/>
-        <span className="color-name-roma">{color.name}</span>
+        <span className="color-name-roma font-eb-garamond">{color.name}</span>
       </div>
     </div>
     <div className="col" />
@@ -94,7 +94,7 @@ export default function Color ({ color }: IColorProps) {
       </div>
 
       <div className="col col-sm-auto navigator">
-        <span className="text-verticle rem-2">NIPPON COLORS</span>
+        <span className="text-verticle rem-2 font-bebas-neue">NIPPON COLORS</span>
       </div>
     </div>
   )
