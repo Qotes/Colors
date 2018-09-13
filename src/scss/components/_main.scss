@@ -1,11 +1,63 @@
 main {
   transition: background-color 2s ease-out;
-  ul.colors {
+  ul.none-style {
     list-style: none;
+    -webkit-padding-start: 0;
   }
   div.color {
-    position: fixed;
+    position: sticky;
     top: 10px;
-    font-size: 2rem;
+
+    div.color-panel {
+      li {
+        width: 50px;
+      }
+      li.spliter {
+        border-bottom: 1px solid;
+        padding-top: 6px;
+        margin-bottom: 6px;
+      }
+
+      .color-box {
+        .color-label {
+          font-size: 0.5rem;
+        }
+      }
+    }
+
+    // div.color-name {
+    //   span.color-name-kanji {
+    //     // writing-mode: vertical-rl;
+    //     // text-orientation: upright;
+    //     // font-family: 'Kai';
+    //   }
+    // }
+
+    div.navigator {
+      span.text-verticle {
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+      }
+    }
+  }
+}
+
+div.initial { // trick
+  div.color {
+    div.color-panel {
+      li.spliter {
+        border-color: initial;
+      }
+    }
+  }
+}
+
+div.white { // trick
+  div.color {
+    div.color-panel {
+      li.spliter {
+        border-color: white;
+      }
+    }
   }
 }

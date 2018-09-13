@@ -7,14 +7,14 @@ import Context from '../context'
 export default function Main () {
   return (
     <Context.Consumer>
-      {({ selectedColor }) => (
+      {({ selectedColor, contrastColor }) => (
         <main style={{backgroundColor: selectedColor.hex}}>
-          <div className="container">
-            <div className="row justify-content-md-center">
-              <div className="col order-1">
+          <div className={`container ${contrastColor}`}>
+            <div className="row">
+              <div className="col">
                 <Colors />
               </div>
-              <div className="col order-12 col-sm-auto">
+              <div className="col">
                 <Color color={selectedColor} />
               </div>
             </div>

@@ -1,7 +1,5 @@
 @import 'components/main';
-
-$KURENAI: #cb1b45;
-$NADESHIKO: #dc9fb4;
+@import 'components/footer';
 
 .spin {
   animation: spin infinite 20s linear;
@@ -21,19 +19,4 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-}
-
-footer {
-  position: fixed;
-  right: 10px;
-  bottom: 10px;
-  font-size: 0.8rem;
-
-  a {
-    color: $KURENAI;
-    text-shadow: 0 0 2px $NADESHIKO;
-  }
-  a:hover {
-    color: $NADESHIKO;
-  }
 }

@@ -2,9 +2,15 @@
 
 A set of colors exported from [NIPPON COLORS - 日本の伝統色](http://nipponcolors.com).
 
+## Disclaimer
+
+This project is only used to practice React.js + Typescript.
+
+It's designed to be capable to render any set of colors as long as they suit [the data schema](src/colors.ts) as the whole site is built, unlike the _NIPPON COLORS_ which is mostly with pictures, with pure JS + css.
+
 ## LICENSE
 
-Site under Copyright (c) 2018 SY.
+Site under Copyright (c) 2018 Sy.
 
 Exported from _[NIPPON COLORS - 日本の伝統色](http://nipponcolors.com)_.
 
