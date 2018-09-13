@@ -1,3 +1,27 @@
 .adobe-garamond {
   font-family: 'adobe-garamond' sans-serif;
 }
+
+@font-face {
+  font-family: 'Kai';
+  src: url('../simkai.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-kai {
+  font-family: 'KaiTi', 'STKaiti', 'Kai', Arial, Helvetica, sans-serif;
+  // font-family: 'KaiTi', 'STKaiti', 'AR PL UKai TW MBE', 'Kai', Arial, Helvetica, sans-serif;
+}
+
+.rem-half {
+  font-size: 0.5rem;
+}
+
+.rem-2 {
+  font-size: 2rem;
+}
+
+.rem-4 {
+  font-size: 4rem;
+}

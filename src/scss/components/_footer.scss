@@ -1,0 +1,16 @@
+@import '../helpers/variables';
+
+footer {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  font-size: 0.8rem;
+
+  a {
+    color: $KURENAI;
+    text-shadow: 0 0 2px $NADESHIKO;
+  }
+  a:hover {
+    color: $NADESHIKO;
+  }
+}
