@@ -1,0 +1,14 @@
+{
+  "name": "Qotes-Nippon-Colors",
+  "alias": "qotes-nippon-colors.now.sh",
+  "type": "static",
+  "static": {
+    "public": "build"
+  },
+  "files": [
+    "build"
+  ],
+  "engines": {
+    "node": "^8.10.0"
+  }
+}
