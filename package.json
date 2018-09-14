@@ -12,12 +12,16 @@
     "test": "react-scripts-ts test --env=jsdom",
     "collect": "python scripts/q.py",
     "ci": "react-scripts-ts test --ci --coverage --env=jsdom",
+    "deploy": "now --public | now alias $(cat) qotes-nippon-colors",
     "eject": "react-scripts-ts eject"
   },
   "dependencies": {
     "bootstrap": "^4.1.1",
     "react": "16.5.0",
     "react-dom": "16.5.0"
+  },
+  "peerDependencies": {
+    "now": "11.4.2"
   },
   "devDependencies": {
     "@types/jest": "^23.0.0",

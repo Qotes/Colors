@@ -1,0 +1,13 @@
+{
+  "name": "Qotes-Nippon-Colors",
+  "type": "static",
+  "static": {
+    "public": "build"
+  },
+  "files": [
+    "build"
+  ],
+  "engines": {
+    "node": "^8.10.0"
+  }
+}
