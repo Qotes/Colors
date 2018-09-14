@@ -8,4 +8,5 @@
 
 [ ] Number, letters fonts.
 
-[ ] The simkai.woff is too big, partially select characters for linux. AR PL UKai is deprecated.
+[x] The simkai.woff is too big, partially select characters for linux. AR PL UKai is deprecated.
+  [ ] dynamicly compressed woff
