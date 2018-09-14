@@ -12,6 +12,7 @@
     "test": "react-scripts-ts test --env=jsdom",
     "collect": "python scripts/q.py",
     "ci": "react-scripts-ts test --ci --coverage --env=jsdom",
+    "deploy": "now --public | now alias $(cat) qotes-nippon-colors",
     "eject": "react-scripts-ts eject"
   },
   "dependencies": {

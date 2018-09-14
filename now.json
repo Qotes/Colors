@@ -1,6 +1,5 @@
 {
   "name": "Qotes-Nippon-Colors",
-  "alias": "qotes-nippon-colors.now.sh",
   "type": "static",
   "static": {
     "public": "build"
