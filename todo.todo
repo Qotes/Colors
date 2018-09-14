@@ -1,12 +1,21 @@
 ## TODO
 
-[ ] Shade.
+[x] Shade.
+
+[x] Deploy.
 
 [ ] Colors style.
 
+[ ] More transitions.
+
+[x] Number, letters fonts.
+
+[x] The simkai.woff is too big, partially compressed characters needed.
+
+## Delayed
+
+[ ] dynamicly compressed woff
+
+## Aborted
+
 [ ] Dynamic loading.
-
-[ ] Number, letters fonts.
-
-[x] The simkai.woff is too big, partially select characters for linux. AR PL UKai is deprecated.
-  [ ] dynamicly compressed woff
