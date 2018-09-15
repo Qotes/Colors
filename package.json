@@ -6,13 +6,13 @@
     "start-js": "react-scripts-ts start",
     "start": "npm-run-all -p watch-css start-js",
     "build-js": "react-scripts-ts build",
-    "build": "npm-run-all build-css build-js",
+    "build": "npm-run-all build-css build-js deploy",
     "build-css": "node-sass-chokidar --include-path ./node_modules ./src/scss -o ./src/css",
     "watch-css": "npm run build-css && node-sass-chokidar --include-path ./node_modules ./src/scss -o ./src/css --watch --recursive",
     "test": "react-scripts-ts test --env=jsdom",
     "collect": "python scripts/q.py",
     "ci": "react-scripts-ts test --ci --coverage --env=jsdom",
-    "deploy": "now --public | now alias $(cat) qotes-nippon-colors",
+    "deploy": "mv build docs",
     "eject": "react-scripts-ts eject"
   },
   "dependencies": {
