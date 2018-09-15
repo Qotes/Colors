@@ -1,11 +1,11 @@
 version: 2
 jobs:
   build:
+    filters:
+      branches:
+        ignore: gh-pages
     docker:
       - image: circleci/node:8-stretch-browsers
-    branches:
-      ignore:
-        - gh-pages
     steps:
       - checkout
       - run:

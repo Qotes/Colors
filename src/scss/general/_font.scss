@@ -34,6 +34,18 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/OpenSans-Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-open-sans-light {
+  font-family: 'Open Sans';
+  font-weight: lighter;
+}
+
 .font-eb-garamond {
   font-family: 'Eb-Garamond', serif;
 }

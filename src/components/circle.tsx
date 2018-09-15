@@ -49,7 +49,7 @@ export default class Circle extends React.Component<CircleProps, CircleState> {
     const radius = VIEWPORT - lineWidth!
     if (!showPercentage) return
 
-    return (
+    return ( // FIXME: dominantbaseline not supported in IE/Edge
       <text style={textStyle} fill={textColor} x={radius} y={radius} textAnchor="middle" dominantBaseline="central">
         {progress}{showPercentageSymbol && <tspan dx={percentSpacing}>%</tspan>}
       </text>

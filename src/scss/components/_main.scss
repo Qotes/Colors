@@ -1,3 +1,5 @@
+@import '../helpers/variables';
+
 main {
   transition: background-color 2s ease-out;
   background-image: url('../texture.png');
@@ -26,19 +28,30 @@ main {
       }
     }
 
-    // div.color-name {
-    //   span.color-name-kanji {
-    //     // writing-mode: vertical-rl;
-    //     // text-orientation: upright;
-    //     // font-family: 'Kai';
-    //   }
-    // }
+    div.color-name {
+      margin-top: 20px;
+      // span.color-name-kanji {
+      //   // writing-mode: vertical-rl;
+      //   // text-orientation: upright;
+      //   // font-family: 'Kai';
+      // }
+    }
     .color-name-roma {
       padding-left: 5px;
     }
 
-    div.navigator {
-      span.text-verticle {
+    .navigator {
+      .red-circle {
+        margin-top: -1rem;
+        margin-left: -0.9rem;
+        margin-bottom: 0.5rem;
+        width: 4rem;
+        height: 4rem;
+        border: 1px solid #bd002d;
+        border-radius: 2rem;
+        background-color: #bd002d;
+      }
+      .text-verticle {
         writing-mode: vertical-rl;
         text-orientation: mixed;
       }
