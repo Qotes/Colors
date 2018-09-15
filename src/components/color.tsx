@@ -26,7 +26,7 @@ interface IRgbProps {
 const Circle = ({ progress, color }: ICircleProps) => (
   <ReactCircle progress={progress} progressColor={color} textColor={color}
     showPercentageSymbol={false} size={50} lineWidth={15} bgColor="rgba(220, 220, 220, 0.6)"
-    textStyle={{ fontSize: '12rem' }} animationDuration="2s"
+    textStyle={{ fontSize: '12rem', fontFamily: 'Open Sans' }} animationDuration="2s"
   />
 )
 
@@ -94,6 +94,7 @@ export default function Color ({ color }: IColorProps) {
       </div>
 
       <div className="col col-sm-auto navigator">
+        <div className="red-circle" />
         <span className="text-verticle rem-2 font-bebas-neue">NIPPON COLORS</span>
       </div>
     </div>
