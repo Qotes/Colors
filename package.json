@@ -1,18 +1,20 @@
 {
   "name": "qotes-nippon-colors",
+  "homepage": "https://qotes.github.io/Qotes-Nippon-Colors",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "start-js": "react-scripts-ts start",
     "start": "npm-run-all -p watch-css start-js",
     "build-js": "react-scripts-ts build",
-    "build": "npm-run-all build-css build-js deploy",
+    "build": "npm-run-all build-css build-js",
     "build-css": "node-sass-chokidar --include-path ./node_modules ./src/scss -o ./src/css",
     "watch-css": "npm run build-css && node-sass-chokidar --include-path ./node_modules ./src/scss -o ./src/css --watch --recursive",
     "test": "react-scripts-ts test --env=jsdom",
     "collect": "python scripts/q.py",
     "ci": "react-scripts-ts test --ci --coverage --env=jsdom",
-    "deploy": "mv build docs",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts-ts eject"
   },
   "dependencies": {
@@ -20,14 +22,12 @@
     "react": "16.5.0",
     "react-dom": "16.5.0"
   },
-  "peerDependencies": {
-    "now": "11.4.2"
-  },
   "devDependencies": {
     "@types/jest": "^23.0.0",
     "@types/node": "^10.3.0",
     "@types/react": "16.4.13",
-    "@types/react-dom": "^16.0.5",
+    "@types/react-dom": "16.0.5",
+    "gh-pages": "^1.2.0",
     "node-fetch": "^2.2.0",
     "node-sass-chokidar": "^1.3.0",
     "npm-run-all": "^4.1.3",

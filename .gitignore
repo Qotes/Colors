@@ -60,3 +60,6 @@ src/**/*.css
 
 # react env
 .env*.local
+
+# build
+/build
