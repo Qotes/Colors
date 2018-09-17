@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { colors, IColorData } from '../colors'
-import { rgb2yiq } from './helpers/transformer'
+// import { rgb2yiq } from './helpers/transformer'
 import Context from '../context'
 
 
@@ -9,15 +9,40 @@ interface IColorProps {
   color: IColorData
 }
 
+interface IColorLineProps {
+  value: number
+}
+
+
+const ColorLine = ({value}: IColorLineProps) => (
+  <div className="color-line-wrapper">
+    <div className="color-line" style={{width: `${value / 256 * 100}%`}} />
+  </div>
+)
+
 
 // tslint:disable:jsx-no-lambda
 const Color = ({ color, index }: IColorProps) => (
   <Context.Consumer>
     {({ selectColor }) => (
-      <li className="color" style={{color: color.hex}} onClick={(e: React.MouseEvent) => selectColor(index, e)}>
+      <li className="color" onClick={(e: React.MouseEvent) => selectColor(index, e)}>
         <div className="row">
           <div className="col-auto square" style={{backgroundColor: color.hex}} />
-          <div className="col description">{color.kanji} {color.name} {color.hex} {color.cmyk} {rgb2yiq(color.rgb)}</div>
+
+          <div className="col description">
+            <div className="color-names">
+              <span className="color-kanji font-kai">{color.kanji}</span>
+              <span className="color-hex font-open-sans-light right">{color.hex}</span>
+            </div>
+            <div className="color-lines">
+              <ColorLine value={color.rgb[0]} />
+              <ColorLine value={color.rgb[1]} />
+              <ColorLine value={color.rgb[2]} />
+            </div>
+            <div className="color-values">
+              <span className="color-name font-eb-garamond">{color.name}</span>
+            </div>
+          </div>
         </div>
       </li>
     )}

@@ -39,10 +39,6 @@ main {
 
     div.color-name {
       margin-top: 20px;
-      // span.color-name-kanji {
-      //   // writing-mode: vertical-rl;
-      //   // text-orientation: upright;
-      // }
     }
     .color-name-roma {
       padding-left: 5px;
@@ -65,24 +61,32 @@ main {
       }
     }
   }
-}
 
-div.initial { // trick
-  div.color {
-    div.color-panel {
-      li.spliter {
-        border-color: initial;
+  li.color {
+    .color-names {
+      width: 80%;
+      margin-top: 0.33rem;
+    }
+    .color-line-wrapper {
+      width: 80%;
+      background-color: rgba(200, 200, 200, 0.6);
+      margin-top: 3px;
+      margin-bottom: 3px;
+      .color-line {
+        border-bottom: 1px solid;
       }
     }
   }
 }
 
+div.initial { // trick
+  .spliter, .color-line{
+    border-color: initial;
+  }
+}
+
 div.white { // trick
-  div.color {
-    div.color-panel {
-      li.spliter {
-        border-color: white;
-      }
-    }
+  .spliter, .color-line {
+    border-color: white;
   }
 }
