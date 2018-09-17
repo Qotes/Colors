@@ -1,4 +1,5 @@
 @import '../helpers/variables';
+@import '../helpers/animations';
 
 main {
   transition: background-color 2s ease-out;
@@ -6,6 +7,10 @@ main {
   ul.none-style {
     list-style: none;
     -webkit-padding-start: 0;
+    .square {
+      width: 4rem;
+      height: 4rem;
+    }
   }
   div.color {
     position: sticky;
@@ -25,6 +30,10 @@ main {
         .color-label {
           font-size: 0.5rem;
         }
+        .color-value {
+          font-size: 1.33rem;
+          font-family: 'Open Sans'
+        }
       }
     }
 
@@ -33,7 +42,6 @@ main {
       // span.color-name-kanji {
       //   // writing-mode: vertical-rl;
       //   // text-orientation: upright;
-      //   // font-family: 'Kai';
       // }
     }
     .color-name-roma {
