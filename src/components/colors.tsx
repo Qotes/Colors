@@ -15,7 +15,10 @@ const Color = ({ color, index }: IColorProps) => (
   <Context.Consumer>
     {({ selectColor }) => (
       <li className="color" style={{color: color.hex}} onClick={(e: React.MouseEvent) => selectColor(index, e)}>
-        {color.kanji} {color.name} {color.hex} {color.cmyk} {rgb2yiq(color.rgb)}
+        <div className="row">
+          <div className="col-auto square" style={{backgroundColor: color.hex}} />
+          <div className="col description">{color.kanji} {color.name} {color.hex} {color.cmyk} {rgb2yiq(color.rgb)}</div>
+        </div>
       </li>
     )}
   </Context.Consumer>

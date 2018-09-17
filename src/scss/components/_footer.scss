@@ -1,9 +1,9 @@
 @import '../helpers/variables';
 
 footer {
-  position: fixed;
-  right: 10px;
-  bottom: 10px;
+  position: sticky;
+  padding: 10px;
+  bottom: 0;
   font-size: 0.8rem;
 
   a {
