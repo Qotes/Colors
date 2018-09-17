@@ -26,7 +26,7 @@ interface IRgbProps {
 // tslint:disable: jsx-alignment no-magic-numbers
 const Circle = ({ progress, color }: ICircleProps) => (
   <ReactCircle progress={progress} progressColor={color} textColor={color}
-    size={50} lineWidth={15} bgColor="rgba(220, 220, 220, 0.6)"
+    size={50} lineWidth={15} bgColor="rgba(200, 200, 200, 0.6)"
     textStyle={{ fontSize: '11rem', fontFamily: 'Open Sans' }}
   />
 )
