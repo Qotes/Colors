@@ -1,12 +1,12 @@
 # Qotes-Nippon-Colors [![CircleCI](https://img.shields.io/circleci/project/github/Qotes/Qotes-Nippon-Colors/master.svg)](https://circleci.com/gh/Qotes/Qotes-Nippon-Colors) [![Greenkeeper badge](https://badges.greenkeeper.io/Qotes/Qotes-Nippon-Colors.svg)](https://greenkeeper.io/)
 
-A set of colors exported from [NIPPON COLORS - 日本の伝統色](http://nipponcolors.com) to [https://qotes.github.io/Qotes-Nippon-Colors](https://qotes.github.io/Qotes-Nippon-Colors).
+A set of colors exported from [NIPPON COLORS - 日本の伝統色](http://nipponcolors.com) to [https://qotes.github.io/Colors](https://qotes.github.io/Qotes-Nippon-Colors).
 
 ## Disclaimer
 
-This project is only used to practice React.js + Typescript.
+It's designed to be capable of rendering any set of colors as long as they suit [the data schema](src/colors.ts) as the whole site is built, unlike the _NIPPON COLORS_ which is mostly with pictures, with pure JS + css. So the key of it is portable, since we're not rendering with pictures, and responsive.
 
-It's designed to be capable to render any set of colors as long as they suit [the data schema](src/colors.ts) as the whole site is built, unlike the _NIPPON COLORS_ which is mostly with pictures, with pure JS + css.
+Another significant difference worth mentioning is that the repo is much more practicle, it's not just for displaying but a tool helps on choosing colors.
 
 ## LICENSE
 
