@@ -29,7 +29,7 @@ const Color = ({ color, index }: IColorProps) => (
         <div className="row">
           <div className="col-auto square" style={{backgroundColor: color.hex}} />
 
-          <div className="col description">
+          <div className="col description xs-hidden">
             <div className="color-names">
               <span className="color-kanji font-kai">{color.kanji}</span>
               <span className="color-hex font-open-sans-light right">{color.hex}</span>

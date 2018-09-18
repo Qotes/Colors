@@ -76,9 +76,8 @@ const ColorName = ({ color }: IColorProps) => (
     <div className="col" />
     <div className="col col-sm-auto">
       <div className="col color-name">
-        <span className="color-name-kanji rem-4 font-kai fade-in" key={color.hex + 'kanji'}>{color.kanji}</span>
-        <br/>
-        <span className="color-name-roma font-eb-garamond fade-in" key={color.hex + 'name'}>{color.name}</span>
+        <div className="color-name-kanji rem-4 font-kai fade-in" key={color.hex + 'kanji'}>{color.kanji}</div>
+        <div className="color-name-roma font-eb-garamond fade-in" key={color.hex + 'name'}>{color.name}</div>
       </div>
     </div>
     <div className="col" />
