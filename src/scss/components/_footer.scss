@@ -1,9 +1,9 @@
 @import '../helpers/variables';
 
 footer {
-  position: sticky;
-  padding: 10px;
-  bottom: 0;
+  position: fixed;
+  right: 0.5rem;
+  bottom: 0.5rem;
   font-size: 0.8rem;
 
   a {
@@ -12,5 +12,19 @@ footer {
   }
   a:hover {
     color: $NADESHIKO;
+  }
+  .block {
+    display: none;
+  }
+}
+
+@media (max-width: 540px) {
+  footer {
+    font-size: 0.1rem;
+    bottom: 2px;
+    right: 2px;
+    .block {
+      display: block;
+    }
   }
 }
