@@ -6,7 +6,7 @@ A set of colors exported from [NIPPON COLORS - 日本の伝統色](http://nippon
 
 It's designed to be capable of rendering any set of colors as long as they suit [the data schema](src/colors.ts) as the whole site is built, unlike the _NIPPON COLORS_ which is mostly with pictures, with pure JS + css. So the key of it is portable, since we're not rendering with pictures, and responsive.
 
-Another significant difference worth mentioning is that the repo is much more practicle, it's not just for displaying but a tool helps on choosing colors.
+Another significant difference worth mentioning is that the repo is much more practical, it's not just for displaying but a tool helps on choosing colors.
 
 ## LICENSE
 
