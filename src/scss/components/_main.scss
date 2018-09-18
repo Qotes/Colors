@@ -38,10 +38,17 @@ main {
     }
 
     div.color-name {
-      margin-top: 20px;
-    }
-    .color-name-roma {
-      padding-left: 5px;
+      margin-top: 2rem;
+      .color-name-kanji {
+        width: 4rem;
+        word-wrap: break-word;
+        text-align: center;
+      }
+      .color-name-roma {
+        width: 4rem;
+        padding: 0 auto;
+        text-align: center;
+      }
     }
 
     .navigator {
@@ -88,5 +95,11 @@ div.initial { // trick
 div.white { // trick
   .spliter, .color-line {
     border-color: white;
+  }
+}
+
+@media (max-width: 810px) {
+  .col-xs-hidden {
+    display: none;
   }
 }
