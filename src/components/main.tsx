@@ -11,10 +11,10 @@ export default function Main () {
         <main style={{backgroundColor: selectedColor.hex}}>
           <div className={`container ${contrastColor}`}>
             <div className="row">
-              <div className="col">
+              <div className="col-3 col-md">
                 <Colors />
               </div>
-              <div className="col">
+              <div className="col-9 col-md">
                 <Color color={selectedColor} />
               </div>
             </div>
