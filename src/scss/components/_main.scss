@@ -4,6 +4,7 @@
 main {
   transition: background-color 2s ease-out;
   background-image: url('../texture.png');
+  fill: currentColor;
   ul.none-style {
     list-style: none;
     -webkit-padding-start: 0;
@@ -19,6 +20,24 @@ main {
     div.color-panel {
       li {
         width: 50px;
+      }
+      li[pop-content^="#"] {
+        position: relative;
+      }
+      li[pop-content^="#"]:hover::after {
+        content: attr(pop-content);
+        position: absolute;
+        left: 4rem;
+        top: -0.3rem;
+        min-width: 8rem;
+        border: 0.5px solid rgba(250, 250, 250, 0.8);
+        border-radius: 0.4rem;
+        background-color: rgba(200, 200, 200, 0.6);
+        padding: 1rem;
+        color: white;
+        font-size: 1rem;
+        font-family: "Open Sans";
+        z-index: 1;
       }
       li.spliter {
         border-bottom: 1px solid;
@@ -53,8 +72,8 @@ main {
 
     .navigator {
       .red-circle {
+        margin: auto;
         margin-top: -1rem;
-        margin-left: -0.9rem;
         margin-bottom: 0.5rem;
         width: 4rem;
         height: 4rem;
@@ -65,6 +84,17 @@ main {
       .text-verticle {
         writing-mode: vertical-rl;
         text-orientation: mixed;
+        margin: auto;
+      }
+      .github {
+        margin: 2rem auto;
+        svg {
+          display: block;
+          margin: auto;
+        }
+      }
+      .github a:hover {
+        fill: currentColor;
       }
     }
   }
@@ -87,14 +117,20 @@ main {
 }
 
 div.initial { // trick
-  .spliter, .color-line{
+  .spliter, .color-line {
     border-color: initial;
+  }
+  .github a {
+    fill: initial;
   }
 }
 
 div.white { // trick
   .spliter, .color-line {
     border-color: white;
+  }
+  .github a {
+    fill: white;
   }
 }
 

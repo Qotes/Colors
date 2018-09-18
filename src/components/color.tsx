@@ -1,6 +1,7 @@
 import * as React from 'react'
 import ReactCircle from './circle'
 import { IColorData } from '../colors'
+import { Github } from './icons'
 import { str2cmyk } from './helpers/transformer'
 
 
@@ -63,7 +64,7 @@ const ColorPanel = ({ color }: IColorProps) => {
     <li className="spliter" />
     <li><Rgb label="R" value={color.rgb[0]} /></li>
     <li className="spliter" />
-    <li><Rgb label="G" value={color.rgb[1]} /></li>
+    <li pop-content={color.hex} className="pop"><Rgb label="G" value={color.rgb[1]} /></li>
     <li className="spliter" />
     <li><Rgb label="B" value={color.rgb[2]} /></li>
     <li className="spliter" />
@@ -88,7 +89,8 @@ const ColorName = ({ color }: IColorProps) => (
 const Navigator = () => (
   <div>
     <div className="red-circle" />
-    <span className="text-verticle rem-2 font-bebas-neue">NIPPON COLORS</span>
+    <div className="text-verticle rem-2 font-bebas-neue">NIPPON COLORS</div>
+    <div className="github"><a href="https://github.com/qotes/Colors" target="_blank"><Github /></a></div>
   </div>
 )
 
