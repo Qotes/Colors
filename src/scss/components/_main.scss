@@ -104,6 +104,9 @@ main {
       width: 80%;
       margin-top: 0.33rem;
     }
+    .hovered {
+      display: none;
+    }
     .color-line-wrapper {
       width: 80%;
       background-color: rgba(200, 200, 200, 0.6);
@@ -112,6 +115,17 @@ main {
       .color-line {
         border-bottom: 1px solid;
       }
+    }
+  }
+  li.color:hover {
+    .description {
+      background: linear-gradient(90deg, rgba(200, 200, 200, 0.15) 0, transparent 80%);
+    }
+    .not-hovered {
+      display: none;
+    }
+    .hovered {
+      display: inline;
     }
   }
 }
