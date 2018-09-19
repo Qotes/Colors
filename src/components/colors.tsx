@@ -1,6 +1,5 @@
 import * as React from 'react'
 import { colors, IColorData } from '../colors'
-// import { rgb2yiq } from './helpers/transformer'
 import Context from '../context'
 
 

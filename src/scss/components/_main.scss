@@ -152,4 +152,21 @@ div.white { // trick
   .xs-hidden {
     display: none;
   }
+  .xs-no-padding {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .xs-no-margin {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+  }
+}
+
+@media (max-width: 450px) {
+  li.spliter {
+    padding-top: 4px !important;
+    margin-bottom: 4px !important;
+  }
 }
