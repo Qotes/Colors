@@ -104,6 +104,9 @@ main {
       width: 80%;
       margin-top: 0.33rem;
     }
+    .hovered {
+      display: none;
+    }
     .color-line-wrapper {
       width: 80%;
       background-color: rgba(200, 200, 200, 0.6);
@@ -112,6 +115,17 @@ main {
       .color-line {
         border-bottom: 1px solid;
       }
+    }
+  }
+  li.color:hover {
+    .description {
+      background: linear-gradient(90deg, rgba(200, 200, 200, 0.15) 0, transparent 80%);
+    }
+    .not-hovered {
+      display: none;
+    }
+    .hovered {
+      display: inline;
     }
   }
 }
@@ -137,5 +151,22 @@ div.white { // trick
 @media (max-width: 810px) {
   .xs-hidden {
     display: none;
+  }
+  .xs-no-padding {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .xs-no-margin {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+  }
+}
+
+@media (max-width: 450px) {
+  li.spliter {
+    padding-top: 4px !important;
+    margin-bottom: 4px !important;
   }
 }

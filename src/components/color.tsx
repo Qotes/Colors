@@ -28,7 +28,7 @@ interface IRgbProps {
 const Circle = ({ progress, color }: ICircleProps) => (
   <ReactCircle progress={progress} progressColor={color} textColor={color}
     size={50} lineWidth={15} bgColor="rgba(200, 200, 200, 0.6)"
-    textStyle={{ fontSize: '11rem', fontFamily: 'Open Sans' }}
+    textStyle={{ fontSize: '11em', fontFamily: 'Open Sans' }}
   />
 )
 
@@ -52,7 +52,7 @@ const Rgb = ({ label, value }: IRgbProps) => (
 const ColorPanel = ({ color }: IColorProps) => {
   const cmyk = str2cmyk(color.cmyk)
   return (
-  <ul className="none-style">
+  <ul className="none-style xs-no-margin">
     <li className="spliter" />
     <li><Cmyk label="C" progress={cmyk[0]} color="cyan" /></li>
     <li className="spliter" />
@@ -74,8 +74,8 @@ const ColorPanel = ({ color }: IColorProps) => {
 
 const ColorName = ({ color }: IColorProps) => (
   <div className="row justify-content-around">
-    <div className="col" />
-    <div className="col col-sm-auto">
+    <div className="col xs-no-padding" />
+    <div className="col col-auto">
       <div className="col color-name">
         <div className="color-name-kanji rem-4 font-kai fade-in" key={color.hex + 'kanji'}>{color.kanji}</div>
         <div className="color-name-roma font-eb-garamond fade-in" key={color.hex + 'name'}>{color.name}</div>
@@ -106,7 +106,7 @@ export default function Color ({ color }: IColorProps) {
         <ColorName color={color} />
       </div>
 
-      <div className="col col-auto navigator">
+      <div className="col col-auto navigator xs-hidden">
         <Navigator />
       </div>
     </div>

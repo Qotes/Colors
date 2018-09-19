@@ -1,6 +1,5 @@
 import * as React from 'react'
 import { colors, IColorData } from '../colors'
-// import { rgb2yiq } from './helpers/transformer'
 import Context from '../context'
 
 
@@ -31,7 +30,8 @@ const Color = ({ color, index }: IColorProps) => (
 
           <div className="col description xs-hidden">
             <div className="color-names">
-              <span className="color-kanji font-kai">{color.kanji}</span>
+              <span className="color-kanji font-kai not-hovered">{color.kanji}</span>
+              <span className="color-kanji font-kai hovered" style={{color: color.hex}}>{color.kanji}</span>
               <span className="color-hex font-open-sans-light right">{color.hex}</span>
             </div>
             <div className="color-lines">
