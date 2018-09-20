@@ -49,6 +49,12 @@ main {
         .color-label {
           font-size: 0.5rem;
         }
+        .color-circle {
+          .react-circle-text {
+            font-size: 11em;
+            font-family: "Open Sans";
+          }
+        }
         .color-value {
           font-size: 1.33rem;
           font-family: 'Open Sans'
@@ -159,8 +165,6 @@ div.white { // trick
   .xs-no-margin {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
-    -webkit-margin-before: 0;
-    -webkit-margin-after: 0;
   }
 }
 
@@ -168,5 +172,9 @@ div.white { // trick
   li.spliter {
     padding-top: 4px !important;
     margin-bottom: 4px !important;
+  }
+  ul {
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
   }
 }
