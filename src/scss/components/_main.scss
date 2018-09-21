@@ -106,6 +106,7 @@ main {
   }
 
   li.color {
+    font-display: fallback;
     .color-names {
       width: 80%;
       margin-top: 0.33rem;
