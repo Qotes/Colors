@@ -13,6 +13,7 @@
     "test": "react-scripts-ts test --env=jsdom",
     "collect": "python scripts/q.py",
     "ci": "react-scripts-ts test --ci --coverage --env=jsdom",
+    "ci-jest": "jest",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "eject": "react-scripts-ts eject"
