@@ -41,6 +41,7 @@ main {
       }
       li.spliter {
         border-bottom: 1px solid;
+        border-color: currentColor;
         padding-top: 6px;
         margin-bottom: 6px;
       }
@@ -121,6 +122,7 @@ main {
       margin-bottom: 3px;
       .color-line {
         border-bottom: 1px solid;
+        border-color: currentColor;
       }
     }
   }
@@ -137,22 +139,12 @@ main {
   }
 }
 
-div.initial { // trick
-  .spliter, .color-line {
-    border-color: initial;
-  }
-  .github a {
-    fill: initial;
-  }
+.initial .github a {
+  fill: initial;
 }
 
-div.white { // trick
-  .spliter, .color-line {
-    border-color: white;
-  }
-  .github a {
-    fill: white;
-  }
+.white .github a {
+  fill: white;
 }
 
 @media (max-width: 810px) {
