@@ -21,7 +21,6 @@ export interface CircleProps {
   roundedStroke?: boolean
   responsive?: boolean
   textClass?: string
-  onAnimationEnd? (): void
 }
 
 export interface CircleState {}
@@ -62,13 +61,12 @@ export default class Circle extends React.Component<CircleProps, CircleState> {
     const {
       progress, size, lineWidth, roundedStroke, responsive,
       bgColor, progressColor,
-      animate, animationDuration, onAnimationEnd
+      animate, animationDuration
     } = this.props
     const radius = Circle.VIEWPORT - lineWidth!
     const perimeter = Math.round(Math.PI * radius * 2)
-    const getOffset = (val = 0) => Math.round((100 - val) / 100 * perimeter)
+    const strokeDashoffset = Math.round((100 - progress) / 100 * perimeter)
     const text = this.text
-    const strokeDashoffset = getOffset(progress)
     const transition = animate ? `stroke-dashoffset ${animationDuration} ease-out` : undefined
     const strokeLinecap = roundedStroke ? 'round' : 'butt'
     const svgSize = responsive ? '100%' : size
@@ -80,7 +78,7 @@ export default class Circle extends React.Component<CircleProps, CircleState> {
     return (
       <svg width={svgSize} height={svgSize} viewBox={viewBox}>
         <circle stroke={bgColor} cx={radius} cy={radius} r={radius} strokeWidth={lineWidth} fill="none"/>
-        <circle stroke={progressColor} transform={transform} cx={radius} cy={radius} r={radius} strokeDasharray={perimeter} strokeWidth={lineWidth} strokeDashoffset={perimeter} strokeLinecap={strokeLinecap} fill="none" style={{ strokeDashoffset, transition }} onTransitionEnd={onAnimationEnd}/>
+        <circle stroke={progressColor} transform={transform} cx={radius} cy={radius} r={radius} strokeDasharray={perimeter} strokeWidth={lineWidth} strokeDashoffset={perimeter} strokeLinecap={strokeLinecap} fill="none" style={{ strokeDashoffset, transition }} />
         {text}
       </svg>
     )

@@ -89,11 +89,13 @@ main {
         background-color: #bd002d;
       }
       .text-verticle {
+        width: 56%; // workaround
         writing-mode: vertical-rl;
         text-orientation: mixed;
         margin: auto;
       }
       .github {
+        width: 100%;
         margin: 2rem auto;
         svg {
           display: block;
