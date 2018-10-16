@@ -103,7 +103,7 @@ export default function Color ({ color }: IColorProps) {
         <ColorName color={color} />
       </div>
 
-      <div className="col col-auto navigator xs-hidden">
+      <div className="col col-auto navigator hidden d-md-block">
         <Navigator />
       </div>
     </div>

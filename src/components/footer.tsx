@@ -9,7 +9,7 @@ export default function Footer () {
         <footer className="text-right">
           <div className={contrastColor}>
             <span>Copyright © 2018 Sy. </span>
-            <div className="block" />
+            <div className="block d-sm-none" />
             <span>Exported from: </span><cite><a href="http://nipponcolors.com" target="_blank" rel="noopener">NIPPON COLORS - 日本の伝統色</a>.</cite>
           </div>
         </footer>
