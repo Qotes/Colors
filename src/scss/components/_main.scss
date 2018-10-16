@@ -76,36 +76,6 @@ main {
         text-align: center;
       }
     }
-
-    .navigator {
-      .red-circle {
-        margin: auto;
-        margin-top: -1rem;
-        margin-bottom: 0.5rem;
-        width: 4rem;
-        height: 4rem;
-        border: 1px solid #bd002d;
-        border-radius: 2rem;
-        background-color: #bd002d;
-      }
-      .text-verticle {
-        width: 56%; // workaround
-        writing-mode: vertical-rl;
-        text-orientation: mixed;
-        margin: auto;
-      }
-      .github {
-        width: 100%;
-        margin: 2rem auto;
-        svg {
-          display: block;
-          margin: auto;
-        }
-      }
-      .github a:hover {
-        fill: currentColor;
-      }
-    }
   }
 
   li.color {
@@ -139,6 +109,36 @@ main {
       display: inline;
     }
   }
+
+  .navigator {
+    .red-circle {
+      margin: auto;
+      margin-top: -1rem;
+      margin-bottom: 0.5rem;
+      width: 4rem;
+      height: 4rem;
+      border: 1px solid #bd002d;
+      border-radius: 2rem;
+      background-color: #bd002d;
+    }
+    .text-verticle {
+      width: 56%; // workaround
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      margin: auto;
+    }
+    .github {
+      width: 100%;
+      margin: 2rem auto;
+      svg {
+        display: block;
+        margin: auto;
+      }
+    }
+    .github a:hover {
+      fill: currentColor;
+    }
+  }
 }
 
 .initial .github a {
@@ -150,9 +150,6 @@ main {
 }
 
 @media (max-width: 810px) {
-  .xs-hidden {
-    display: none;
-  }
   .xs-no-padding {
     padding-left: 0 !important;
     padding-right: 0 !important;

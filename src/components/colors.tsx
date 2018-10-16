@@ -28,7 +28,7 @@ const Color = ({ color, index }: IColorProps) => (
         <div className="row">
           <div className="col-auto square" style={{backgroundColor: color.hex}} />
 
-          <div className="col description xs-hidden">
+          <div className="col description hidden d-md-block">
             <div className="color-names">
               <span className="color-kanji font-kai not-hovered">{color.kanji}</span>
               <span className="color-kanji font-kai hovered" style={{color: color.hex}}>{color.kanji}</span>
