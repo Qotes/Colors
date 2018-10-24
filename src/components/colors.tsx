@@ -51,7 +51,7 @@ const Color = ({ color, index }: IColorProps) => (
 
 
 const Colors = () => (
-  <ul className="none-style">
+  <ul>
     {colors.map((color, i) => (<Color color={color} index={i} key={i} />))}
   </ul>
 )
