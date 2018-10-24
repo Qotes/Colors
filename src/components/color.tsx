@@ -49,7 +49,7 @@ const Rgb = ({ label, value }: IRgbProps) => (
 const ColorPanel = ({ color }: IColorProps) => {
   const cmyk = str2cmyk(color.cmyk)
   return (
-  <ul className="none-style xs-no-margin">
+  <ul className="xs-no-margin font-open-sans-light relative">
     <li className="spliter" />
     <li><Cmyk label="C" progress={cmyk[0]} color="cyan" /></li>
     <li className="spliter" />
@@ -59,11 +59,11 @@ const ColorPanel = ({ color }: IColorProps) => {
     <li className="spliter" />
     <li><Cmyk label="K" progress={cmyk[3]} color="black" /></li>
     <li className="spliter" />
-    <li><Rgb label="R" value={color.rgb[0]} /></li>
+    <li pop-content={color.hex}><Rgb label="R" value={color.rgb[0]} /></li>
     <li className="spliter" />
-    <li pop-content={color.hex} className="pop"><Rgb label="G" value={color.rgb[1]} /></li>
+    <li pop-content={color.hex}><Rgb label="G" value={color.rgb[1]} /></li>
     <li className="spliter" />
-    <li><Rgb label="B" value={color.rgb[2]} /></li>
+    <li pop-content={color.hex}><Rgb label="B" value={color.rgb[2]} /></li>
     <li className="spliter" />
   </ul>
 )}
@@ -94,7 +94,7 @@ const Navigator = () => (
 
 export default function Color ({ color }: IColorProps) {
   return (
-    <div className="row justify-content-around color">
+    <div className="row justify-content-around color sticky">
       <div className="col col-auto color-panel">
         <ColorPanel color={color} />
       </div>

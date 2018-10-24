@@ -5,146 +5,136 @@ main {
   transition: background-color 2s ease-out;
   background-image: url('../texture.png');
   fill: currentColor;
-  ul.none-style {
-    list-style: none;
-    -webkit-padding-start: 0;
-    .square {
+  .square {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
+
+div.color {
+  top: 10px;
+
+  .color-panel {
+    li {
+      width: 50px;
+    }
+    li[pop-content^="#"]:hover::after {
+      content: attr(pop-content);
+      position: absolute;
+      left: 4rem;
+      bottom: 3.5em;
+      min-width: 8rem;
+      border: 0.5px solid rgba(250, 250, 250, 0.8);
+      border-radius: 0.4rem;
+      background-color: rgba(200, 200, 200, 0.3);
+      padding: 1rem;
+      color: white;
+      font-size: 1rem;
+      z-index: 1;
+    }
+    li.spliter {
+      border-bottom: 1px solid;
+      border-color: currentColor;
+      padding-top: 6px;
+      margin-bottom: 6px;
+    }
+  }
+
+  div.color-name {
+    margin-top: 2rem;
+    .color-name-kanji {
       width: 4rem;
-      height: 4rem;
+      word-wrap: break-word;
+      text-align: center;
     }
-  }
-  div.color {
-    position: sticky;
-    top: 10px;
-
-    div.color-panel {
-      li {
-        width: 50px;
-      }
-      li[pop-content^="#"] {
-        position: relative;
-      }
-      li[pop-content^="#"]:hover::after {
-        content: attr(pop-content);
-        position: absolute;
-        left: 4rem;
-        top: -0.3rem;
-        min-width: 8rem;
-        border: 0.5px solid rgba(250, 250, 250, 0.8);
-        border-radius: 0.4rem;
-        background-color: rgba(200, 200, 200, 0.6);
-        padding: 1rem;
-        color: white;
-        font-size: 1rem;
-        font-family: "Open Sans";
-        z-index: 1;
-      }
-      li.spliter {
-        border-bottom: 1px solid;
-        border-color: currentColor;
-        padding-top: 6px;
-        margin-bottom: 6px;
-      }
-
-      .color-box {
-        .color-label {
-          font-size: 0.5rem;
-        }
-        .color-circle {
-          .react-circle-text {
-            font-size: 11em;
-            font-family: "Open Sans";
-          }
-        }
-        .color-value {
-          font-size: 1.33rem;
-          font-family: 'Open Sans'
-        }
-      }
-    }
-
-    div.color-name {
-      margin-top: 2rem;
-      .color-name-kanji {
-        width: 4rem;
-        word-wrap: break-word;
-        text-align: center;
-      }
-      .color-name-roma {
-        width: 4rem;
-        padding: 0 auto;
-        text-align: center;
-      }
-    }
-  }
-
-  li.color {
-    font-display: fallback;
-    .color-names {
-      width: 80%;
-      margin-top: 0.33rem;
-    }
-    .hovered {
-      display: none;
-    }
-    .color-line-wrapper {
-      width: 80%;
-      background-color: rgba(200, 200, 200, 0.6);
-      margin-top: 3px;
-      margin-bottom: 3px;
-      .color-line {
-        border-bottom: 1px solid;
-        border-color: currentColor;
-      }
-    }
-  }
-  li.color:hover {
-    .description {
-      background: linear-gradient(90deg, rgba(200, 200, 200, 0.15) 0, transparent 80%);
-    }
-    .not-hovered {
-      display: none;
-    }
-    .hovered {
-      display: inline;
-    }
-  }
-
-  .navigator {
-    .red-circle {
-      margin: auto;
-      margin-top: -1rem;
-      margin-bottom: 0.5rem;
+    .color-name-roma {
       width: 4rem;
-      height: 4rem;
-      border: 1px solid #bd002d;
-      border-radius: 2rem;
-      background-color: #bd002d;
-    }
-    .text-verticle {
-      width: 56%; // workaround
-      writing-mode: vertical-rl;
-      text-orientation: mixed;
-      margin: auto;
-    }
-    .github {
-      width: 100%;
-      margin: 2rem auto;
-      svg {
-        display: block;
-        margin: auto;
-      }
-    }
-    .github a:hover {
-      fill: currentColor;
+      padding: 0 auto;
+      text-align: center;
     }
   }
 }
 
+li.color {
+  font-display: fallback;
+  .color-names {
+    width: 80%;
+    margin-top: 0.33rem;
+  }
+  .hovered {
+    display: none;
+  }
+  .color-line-wrapper {
+    width: 80%;
+    background-color: rgba(200, 200, 200, 0.6);
+    margin-top: 3px;
+    margin-bottom: 3px;
+    .color-line {
+      border-bottom: 1px solid;
+      border-color: currentColor;
+    }
+  }
+}
+li.color:hover {
+  .description {
+    background: linear-gradient(90deg, rgba(200, 200, 200, 0.15) 0, transparent 80%);
+  }
+  .not-hovered {
+    display: none;
+  }
+  .hovered {
+    display: inline;
+  }
+}
+
+.color-box {
+  .color-label {
+    font-size: 0.5rem;
+  }
+  .color-circle {
+    .react-circle-text {
+      font-size: 11em;
+    }
+  }
+  .color-value {
+    font-size: 1.33rem;
+  }
+}
+
+.navigator {
+  .red-circle {
+    margin: auto;
+    margin-top: -1rem;
+    margin-bottom: 0.5rem;
+    width: 4rem;
+    height: 4rem;
+    border: 1px solid #bd002d;
+    border-radius: 2rem;
+    background-color: #bd002d;
+  }
+  .text-verticle {
+    width: 56%; // workaround
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    margin: auto;
+  }
+}
+
+.github {
+  width: 100%;
+  margin: 2rem auto;
+  svg {
+    display: block;
+    margin: auto;
+  }
+}
+.github a:hover {
+  fill: currentColor;
+}
 .initial .github a {
   fill: initial;
 }
-
 .white .github a {
   fill: white;
 }
@@ -165,8 +155,7 @@ main {
     padding-top: 4px !important;
     margin-bottom: 4px !important;
   }
-  ul {
-    -webkit-margin-before: 0;
-    -webkit-margin-after: 0;
+  li[pop-content^="#"]:hover::after {
+    bottom: 3em !important;
   }
 }
