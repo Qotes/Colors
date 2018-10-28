@@ -1,4 +1,4 @@
-<a href="https://qotes.github.io/Colors"><img src="https://raw.githubusercontent.com/Qotes/Colors/master/src/logo.svg?sanitize=true" height="200" align="right"></a>
+<a href="https://qotes.github.io/Colors"><img src="https://raw.githubusercontent.com/Qotes/Colors/master/src/logo.svg?sanitize=true" height="150" align="right"></a>
 
 # Qotes-Nippon-Colors [![CircleCI](https://img.shields.io/circleci/project/github/Qotes/Colors/master.svg)](https://circleci.com/gh/Qotes/Colors) [![Greenkeeper badge](https://badges.greenkeeper.io/Qotes/Colors.svg)](https://greenkeeper.io/)
 
