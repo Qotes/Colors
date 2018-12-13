@@ -129,14 +129,14 @@ li.color:hover {
     margin: auto;
   }
 }
-.github a:hover {
-  fill: currentColor;
-}
 .initial .github a {
   fill: initial;
 }
 .white .github a {
   fill: white;
+}
+.github a:hover {
+  fill: currentColor;
 }
 
 @media (max-width: 810px) {
