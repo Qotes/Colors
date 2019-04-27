@@ -12,7 +12,7 @@ Another significant difference worth mentioning is that the repo is much more pr
 
 ## LICENSE
 
-Site under Copyright (c) 2018 Sy.
+Site under Copyright (c) 2019 Sy.
 
 Exported from _[NIPPON COLORS - 日本の伝統色](http://nipponcolors.com)_.
 

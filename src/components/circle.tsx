@@ -48,7 +48,7 @@ export default class Circle extends React.Component<CircleProps, CircleState> {
       progress, showPercentage, textColor, textClass,  lineWidth, verticleSpacing
     } = this.props
     const radius = Circle.VIEWPORT - lineWidth!
-    if (!showPercentage) return
+    if (!showPercentage) return ''
 
     return (
       <text className={textClass} fill={textColor} x={radius} y={radius} dy={verticleSpacing} textAnchor="middle">

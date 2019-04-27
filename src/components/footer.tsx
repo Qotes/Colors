@@ -8,9 +8,9 @@ export default function Footer () {
       {({ contrastColor }) => (
         <footer className="text-right">
           <div className={contrastColor}>
-            <span>Copyright © 2018 Sy. </span>
+            <span>Copyright © 2019 Sy. </span>
             <div className="block d-sm-none" />
-            <span>Exported from: </span><cite><a href="http://nipponcolors.com" target="_blank" rel="noopener">NIPPON COLORS - 日本の伝統色</a>.</cite>
+            <span>Exported from: </span><cite><a href="http://nipponcolors.com" rel="noopener">NIPPON COLORS - 日本の伝統色</a>.</cite>
           </div>
         </footer>
       )}
