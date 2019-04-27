@@ -1,12 +1,15 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
+    "baseUrl": "src",
     "rootDir": "src",
     "outDir": "build/dist",
-    "lib": ["es6", "dom"],
-    "jsx": "react",
+    "lib": [
+      "es6",
+      "dom"
+    ],
+    "jsx": "preserve",
     "target": "es5",
-    "module": "esnext", // prod: commonjs
+    "module": "esnext",
     "sourceMap": true,
     "allowJs": false,
     "allowSyntheticDefaultImports": true,
@@ -26,7 +29,10 @@
     "suppressImplicitAnyIndexErrors": true,
     "experimentalDecorators": false,
     "emitDecoratorMetadata": false,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true
   },
   "exclude": [
     "node_modules",
@@ -37,5 +43,8 @@
     "jest",
     "src/setupTests.ts",
     "src/test"
+  ],
+  "include": [
+    "src"
   ]
 }

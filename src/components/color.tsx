@@ -87,7 +87,7 @@ const Navigator = () => (
   <div>
     <div className="red-circle" />
     <div className="text-verticle rem-2 font-bebas-neue">NIPPON COLORS</div>
-    <div className="github"><a href="https://github.com/qotes/Colors" target="_blank" rel="noopener"><Github /></a></div>
+    <div className="github"><a href="https://github.com/qotes/Colors" rel="noopener"><Github /></a></div>
   </div>
 )
 
