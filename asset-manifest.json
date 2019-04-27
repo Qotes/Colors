@@ -1,12 +1,16 @@
 {
-  "main.css": "static/css/main.2bcaff8c.css",
-  "main.css.map": "static/css/main.2bcaff8c.css.map",
-  "main.js": "static/js/main.c588222d.js",
-  "main.js.map": "static/js/main.c588222d.js.map",
-  "static/media/OpenSans-Light.woff": "static/media/OpenSans-Light.c398a2f9.woff",
-  "static/media/bebasneue.woff": "static/media/bebasneue.c902a513.woff",
-  "static/media/bebasneue.woff2": "static/media/bebasneue.3e0736a3.woff2",
-  "static/media/ebgaramond.woff": "static/media/ebgaramond.66be3208.woff",
-  "static/media/ebgaramond.woff2": "static/media/ebgaramond.43a46dc5.woff2",
-  "static/media/simkai.woff": "static/media/simkai.58c52d4d.woff"
+  "files": {
+    "main.css": "/Colors/static/css/main.9513a261.chunk.css",
+    "main.js": "/Colors/static/js/main.03b474e6.chunk.js",
+    "main.js.map": "/Colors/static/js/main.03b474e6.chunk.js.map",
+    "runtime~main.js": "/Colors/static/js/runtime~main.b4ebc45b.js",
+    "runtime~main.js.map": "/Colors/static/js/runtime~main.b4ebc45b.js.map",
+    "static/js/2.ea15365d.chunk.js": "/Colors/static/js/2.ea15365d.chunk.js",
+    "static/js/2.ea15365d.chunk.js.map": "/Colors/static/js/2.ea15365d.chunk.js.map",
+    "index.html": "/Colors/index.html",
+    "precache-manifest.c2c8159315fb6cd8f2bbee8273264038.js": "/Colors/precache-manifest.c2c8159315fb6cd8f2bbee8273264038.js",
+    "service-worker.js": "/Colors/service-worker.js",
+    "static/css/main.9513a261.chunk.css.map": "/Colors/static/css/main.9513a261.chunk.css.map",
+    "static/media/index.css": "/Colors/static/media/simkai.58c52d4d.woff"
+  }
 }
