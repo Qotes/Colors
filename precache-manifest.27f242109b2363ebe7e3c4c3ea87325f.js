@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c31eed8801c703fc358e0bb2707fdba2",
+    "revision": "469effc8f479c40822e80c0bcee5f089",
     "url": "/Colors/index.html"
   },
   {
-    "revision": "ab07fd26ea35f287bafc",
-    "url": "/Colors/static/css/main.4ff333e0.chunk.css"
+    "revision": "cc59b34968e3054d58a6",
+    "url": "/Colors/static/css/main.d058b39c.chunk.css"
   },
   {
-    "revision": "f6693bb5ffbb02791d9f",
-    "url": "/Colors/static/js/2.0d72d5bb.chunk.js"
+    "revision": "cf116b6d1b9275f5ec5c",
+    "url": "/Colors/static/js/2.0d47a134.chunk.js"
   },
   {
-    "revision": "ab07fd26ea35f287bafc",
-    "url": "/Colors/static/js/main.66891bff.chunk.js"
+    "revision": "cc59b34968e3054d58a6",
+    "url": "/Colors/static/js/main.242d1563.chunk.js"
   },
   {
-    "revision": "f619ed9571621b7a4df2",
-    "url": "/Colors/static/js/runtime~main.b4ebc45b.js"
+    "revision": "d93b40ee16467f4ab0b9",
+    "url": "/Colors/static/js/runtime-main.fdc3f911.js"
   },
   {
     "revision": "c398a2f938abd3502ef379e4b113af70",
